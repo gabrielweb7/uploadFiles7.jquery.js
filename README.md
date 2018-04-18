@@ -3,8 +3,27 @@ Plugin Jquery para configurar campo de upload!
 
 
 
+- Html do projeto
+```
+<!-- Upload com campos personalizado pelo plugin jquery -->
+<div class="form-group">
+  <label for="uploadFiles7"> Foto </label>
+  <div class="file-upload">
+    <!-- buttonUploadAction -->
+    <span class="btn btn-default mr-2" id="buttonUploadAction">Search</span>
+    <!-- msgUploadFoto -->
+    <span id="msgUploadFoto">No File Chosen</span>
+    <!-- buttonRemover -->
+    <span id="buttonRemover" class="btn btn-default ml-2" style="color: red;font-size: 12px;">Remover</span>
+    <!-- input File -->
+    <input type="file" class="form-control-file" id="uploadFiles7" name="foto"> 
+    <!-- errorMenssage -->
+    <div id="errorMenssage" style="display:none;color:red;font-size:12px;padding-top:13px;"></div>
+  </div>
+</div>
+```
 
-
+- Lembre de executar o Jquery antes de acionar o plugin
 
 ```
 <script>	
